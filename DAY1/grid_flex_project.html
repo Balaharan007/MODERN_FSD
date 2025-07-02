@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Business Page</title>
+  <style>
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      flex-wrap: wrap;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: white;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .bg-circles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: radial-gradient(circle, rgba(0,0,0,0.03) 1px, transparent 1px);
+      background-size: 200px 200px;
+      z-index: -1;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 4rem;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    nav ul li {
+      cursor: pointer;
+    }
+
+    nav .auth {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4rem;
+      margin-left: 5rem;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      padding: 0.8rem 2rem;
+      background: black;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .social {
+      position: absolute;
+      top: 40%;
+      left: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .social a {
+      width: 32px;
+      height: 32px;
+      border: 1px solid black;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: black;
+      font-size: 14px;
+    }
+
+    .scroll {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      color: #aaa;
+      border: 1px solid #ddd;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+    }
+
+    .video-box {
+      width: 300px;
+      height: 200px;
+      background: #0070f3;
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .video-box::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      background: black;
+    }
+
+    .video-box .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 40px;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* ----------------- NEW SECTION ----------------- */
+    .section-two {
+      display: flex;
+      margin-top: 4rem;
+      height: 500px;
+    }
+
+    .section-left {
+      flex: 1;
+      background-color: #0070f3;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 4rem;
+      position: relative;
+    }
+
+    .section-left h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .section-left p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .section-left button {
+      background: black;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.5rem;
+      border-radius: 999px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .section-right {
+      flex: 1;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .section-right img {
+      width: 90%;
+      max-width: 400px;
+      border-radius: 12px;
+    }
+
+    .caption-vertical {
+      position: absolute;
+      right: -60px;
+      bottom: 30%;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: 12px;
+      color: black;
+      font-weight: 500;
+    }
+  </style> 
+
+</head>
+<body>
+  <div class="bg-circles"></div>
+
+  <nav>
+    <div class="logo">MI BUSINESS</div>
+    <ul>
+      <li style="color:#0070f3;">HOME</li>
+      <li>INTRO</li>
+      <li>EXPERTISES</li>
+      <li>WORK</li>
+      <li>PLANS</li>
+      <li>NEWS</li>
+    </ul>
+    <div class="auth">
+      <span>SIGN IN</span>
+      <span style="color:#0070f3;">SIGN UP</span>
+    </div>
+  </nav>
+
+  <div class="social">
+    <a href="#">F</a>
+    <a href="#">T</a>
+    <a href="#">O</a>
+  </div>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>How do you design<br/> content for every language</h1>
+      <p>
+        We're the content, research and design team at Oxford. We help riders move,
+        restaurants grow and customers eat in over 200 cities around the world. Come
+        find the answers with us.
+      </p>
+      <button class="cta-button">WORK WITH US</button>
+    </div>
+
+    <div class="video-box">
+      <div class="play-btn">&#9658;</div>
+    </div>
+  </section>
+
+  <div class="scroll">Scroll</div>
+
+  <!-- SECTION TWO -->
+  <section class="section-two">
+    <div class="section-left">
+      <h2>Delighting customers in over 200 cities in the world.</h2>
+      <p>
+        We're the content, research and design team at Oxford. We help riders move,
+        restaurants grow and customers eat in over 200 cities around the world.
+        Come find the answers with us.
+      </p>
+      <button>FIND OUT MORE</button>
+    </div>
+    <div class="section-right">
+      <img src="https://cdn.dribbble.com/userupload/42029673/file/original-3b4b35a65f2f2f722d2faf597cab9b12.png?resize=1000x750&vertical=center" alt="3D Image" />
+      <div class="caption-vertical">
+        Delighting customers in over 200 cities in the world.
+      </div>
+    </div>
+  </section>
+</body>
+</html>
